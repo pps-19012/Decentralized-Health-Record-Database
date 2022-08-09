@@ -8,8 +8,6 @@ import Accordion from "./Accordion";
 const App = () => {
   // Patients and health register history
   // const [noOfPatients, setNumber] = useState()
-  const [title, setTitle] = useState('');
-  const [content, setContent] = useState('');
   const [message, setMessage] = useState('');
   const [message1, setMessage1] = useState('');
   const [record, setRecord] = useState([]);
@@ -19,7 +17,6 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [loading1, setLoading1] = useState(false);
   const [accountRecord, setAccountRecord] = useState([]);
-  const [isActive, setIsActive] = useState(false);
 
   // Set players and tickets remaining
   useEffect(() => {
@@ -40,15 +37,14 @@ const App = () => {
       const firstHalfmodified = document.querySelector('.firstHalfmodified');
       const firstHalf_selector_1 = document.querySelector('.firstHalf-selector-1');
       const firstHalf_selector_2 = document.querySelector('.firstHalf-selector-2');
-      const accordion = document.querySelectorAll('.accordion-item-header');
+      
+      //const accordion = document.querySelectorAll('.accordion-item-header');
 
-      const accordion_items = document.querySelector('.accordion');
+      // const accordion_items = document.querySelector('.accordion');
 
-      const submitButton = document.querySelector('#submit');
+      // const submitButton = document.querySelector('#submit');
 
       // submitButton.addEventListener('click', addNewAccordionItem);
-
-
       // function addNewAccordionItem(){
       //     const newAccordionItem = document.createElement('div');
       //     newAccordionItem.classList.add('accordion-item');
@@ -72,11 +68,11 @@ const App = () => {
       //     });
       // }
 
-      accordion.forEach(item => {
-          item.addEventListener('click', () => {
-              item.classList.toggle('active');
-          });
-      })
+      // accordion.forEach(item => {
+      //     item.addEventListener('click', () => {
+      //         item.classList.toggle('active');
+      //     });
+      // })
 
       firstHalf_selector_1.addEventListener("click", () => {
           if(firstHalf_selector_1.classList.contains('active')){
@@ -115,42 +111,48 @@ const App = () => {
     console.log('value is:', event.target.value);
   };
 
+  const handleSubmit = event => {
+    event.preventDefault();
+  }
+
   // onAddRecord for add_record function
   const onAddRecord = async () => {
     try {
       setLoading(true);
       await addRecordOperation(message, message1);
       alert("Transaction succesful!");
+      setMessage('');
+      setMessage1('');
     } catch (err) {
       alert(err.message);
     }
     setLoading(false);
   };
 
-  const onRegister = async () => {
-    try {
-      setLoading1(true);
-      await registerOperation();
-      alert("Registered!");
-    } catch (err) {
-      alert(err.message);
-    }
-    setLoading1(false);
-  };
+  // const onRegister = async () => {
+  //   try {
+  //     setLoading1(true);
+  //     await registerOperation();
+  //     alert("Registered!");
+  //   } catch (err) {
+  //     alert(err.message);
+  //   }
+  //   setLoading1(false);
+  // };
 
-  function ShowRecord(accRec) {
-    return (
-      <>
-      {accRec.length > 0 && 
-        <ul>
-        {accountRecord.map(data => (
-        <li key={data.date}> {data.date} : {data.record_text}</li>
-          ))}
-        </ul>
-      }
-      </>
-    );
-  }
+  // function ShowRecord(accRec) {
+  //   return (
+  //     <>
+  //     {accRec.length > 0 && 
+  //       <ul>
+  //       {accountRecord.map(data => (
+  //       <li key={data.date}> {data.date} : {data.record_text}</li>
+  //         ))}
+  //       </ul>
+  //     }
+  //     </>
+  //   );
+  // }
 
   function ShowAccordion(accRec) {
     return (
@@ -216,7 +218,7 @@ const App = () => {
         <div class="secondHalf">
             <h1 id="formTitle">Add Record</h1>
             <br/>
-            <form id="survey-form" action="">
+            <form>
 
                 <label for="fname" id="name-label">Date</label><br/>
                 <input id="message" name="message" type="text" placeholder="Date" onChange={handleChange} value={message}/><br/>
@@ -227,12 +229,7 @@ const App = () => {
                 <input id="number" type="password" name="number" placeholder="Password"/><br/><br/> */}
                 
                 <br/><br/>
-                {/* <input id="submit" type="button" value="Login"/> */}
-
-                <button onClick={onAddRecord} id="submit" value="Submit">
-                  {loading ? "Loading..." : "Submit"}
-                </button>
-                
+                <input id="submit" type="button" value={loading ? "Loading..." : "Submit"} onClick={onAddRecord}/>          
             </form>
         </div>
     </div>
