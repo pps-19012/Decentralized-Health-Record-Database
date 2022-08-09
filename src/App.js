@@ -2,7 +2,9 @@ import { useState, useEffect } from "react";
 import { getAccount } from "./utils/wallet";
 import Navbar from "./components/Navbar";
 import { addRecordOperation, registerOperation } from "./utils/operation";
+import { loginOperation } from "./utils/operation";
 import { fetchStorage } from "./utils/tzkt";
+import { fetchStorage1 } from "./utils/tzkt";
 import Accordion from "./Accordion";
 
 const App = () => {
@@ -17,6 +19,7 @@ const App = () => {
   const [loading, setLoading] = useState(false);
   const [loading1, setLoading1] = useState(false);
   const [accountRecord, setAccountRecord] = useState([]);
+  const [loginRecord, setLoginRecord] = useState([]);
 
   // Set players and tickets remaining
   useEffect(() => {
@@ -29,6 +32,7 @@ const App = () => {
       setDate(Object.values(storage));
 
       if(Object.keys(storage).includes(currentaccount)) {
+        setAccountRecord(Object.values(storage[currentaccount]));
         setAccountRecord(Object.values(storage[currentaccount]));
       };
       
