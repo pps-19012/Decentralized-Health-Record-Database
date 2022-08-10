@@ -213,7 +213,7 @@ const App = () => {
         <br></br></div>
      :
      <div align="center">
-     <h3>You Seem to be a new user!</h3><br/>
+     <h3>You seem to be a new user!</h3><br/>
      Register you account to start your electronic health record journey
      <br></br>
      <br></br>
