@@ -12,6 +12,8 @@ const App = () => {
   // const [noOfPatients, setNumber] = useState()
   const [message, setMessage] = useState('');
   const [message1, setMessage1] = useState('');
+  const [message2, setMessage2] = useState('');
+  const [message3, setMessage3] = useState('');
   const [record, setRecord] = useState([]);
   const [patients, setPatient] = useState([]);
   const [date, setDate] = useState([]);
@@ -115,6 +117,16 @@ const App = () => {
     console.log('value is:', event.target.value);
   };
 
+  const handleChange2 = event => {
+    setMessage2(event.target.value);
+    console.log('value is:', event.target.value);
+  };
+
+  const handleChange3 = event => {
+    setMessage3(event.target.value);
+    console.log('value is:', event.target.value);
+  };
+
   const handleSubmit = event => {
     event.preventDefault();
   }
@@ -131,6 +143,19 @@ const App = () => {
       alert(err.message);
     }
     setLoading(false);
+  };
+
+  const onLogin = async () => {
+    try {
+      setLoading1(true);
+      await loginOperation(message2, message3);
+      alert("Login succesful!");
+      setMessage2('');
+      setMessage3('');
+    } catch (err) {
+      alert(err.message);
+    }
+    setLoading1(false);
   };
 
   // const onRegister = async () => {
@@ -234,6 +259,24 @@ const App = () => {
                 
                 <br/><br/>
                 <input id="submit" type="button" value={loading ? "Loading..." : "Submit"} onClick={onAddRecord}/>          
+            </form>
+        </div>
+
+        <div class="secondHalfmodified">
+            <h1 id="formTitle">Register/Login</h1>
+            <br/>
+            <form>
+
+                <label for="fname" id="name-label">Name</label><br/>
+                <input id="message2" name="message2" type="text" placeholder="Name" onChange={handleChange2} value={message2}/><br/>
+
+                <label for="email" id="email-label">Password</label><br/>
+                <input id="message3" name="message3" type="text" placeholder="Password" onChange={handleChange3} value={message3}/><br/>
+                {/* <label for="number" id="number-label">Password</label><br/>
+                <input id="number" type="password" name="number" placeholder="Password"/><br/><br/> */}
+                
+                <br/><br/>
+                <input id="submit" type="button" value={loading1 ? "Loading..." : "Login"} onClick={onLogin}/>          
             </form>
         </div>
     </div>
