@@ -57,16 +57,17 @@ th {
   align-items: center;
 }
 
-.navbar {
-  display:flex;
+.navbar-brand:hover {
+  cursor:pointer;
+  color:rgba(0, 255, 255, 0.778);
 }
 
 .nav {
-  display:flex;
+  display:inline-flex;
   justify-content: left;
   align-items: center;
-  background-color: rgb(42, 54, 54);
-  width:100%;
+  /* background-color: rgb(42, 54, 54); */
+  width:50%;
   
 }
 
@@ -90,6 +91,7 @@ th {
   font-size: 20px;
   font-weight: bold;
   margin: 10px;
+  cursor:pointer;
 }
 
 .mainbox {

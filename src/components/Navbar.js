@@ -22,9 +22,16 @@ const Navbar = () => {
   return (
     <div className="navbar navbar-dark bg-dark fixed-top sticky-nav">
       <div className="container py-2">
+        
         <a href="/" className="navbar-brand">
           Health Register
         </a>
+        <ul class="nav">
+            {/* <li><a href="#home">Home</a></li> */}
+            <li><a href="#about">Transactions</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        
         <div className="d-flex">
           {/* TODO 4.b - Call connectWallet function onClick  */}
           <button onClick={onConnectWallet} className="btn btn-outline-info">
@@ -32,6 +39,7 @@ const Navbar = () => {
             {account ? account : "Connect Wallet"}
           </button>
         </div>
+        
       </div>
     </div>
   );

@@ -236,14 +236,17 @@ const App = () => {
       </head>
     <body>
     <nav class="navbar">        
-        <div class="navbar-logo">
-            <a href="index.html" class="navbar-brand"><img src="img.png" alt="logo"/></a>
+        {/* <div class="navbar-logo"> */}
+            {/* <a href="index.html" class="navbar-brand"><img src="img.png" alt="logo"/></a> */}
+            {/* <a href="/" className="navbar-brand">
+          Health Register
+        </a>
         </div>
         <ul class="nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact Us</a></li>
-        </ul>
+        </ul> */}
     </nav>
     <div class="mainbox">
 
