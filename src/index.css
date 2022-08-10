@@ -283,6 +283,19 @@ form textarea {
   font-weight: bold;
 }
 
+#submit1 {
+  width: 20%;
+  padding: 5px;
+  margin: 5px 0px;
+  border: none;
+  border-radius: 10px;
+  background-color: #458282;
+  color: white;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 #submit:hover {
   width: 100%;
   padding: 5px;
@@ -291,6 +304,20 @@ form textarea {
   border-radius: 10px;
   background-color: rgb(42, 54, 54);
   color: rgba(0, 255, 255, 0.567);
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#submit1:hover {
+  width: 20%;
+  padding: 5px;
+  margin: 5px 0px;
+  border: none;
+  border-radius: 10px;
+  background-color: #080a0a;
+  color: #ffffff;
   font-family: monospace;
   font-size: 16px;
   font-weight: bold;

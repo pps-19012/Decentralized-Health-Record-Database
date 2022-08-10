@@ -20,6 +20,7 @@ const App = () => {
   // const [recd_txt, setRecordtxt] = useState([]);
   const [loading, setLoading] = useState(false);
   const [loading1, setLoading1] = useState(false);
+  const [isregistered, setIsRegister] = useState(false);
   const [accountRecord, setAccountRecord] = useState([]);
   const [loginRecord, setLoginRecord] = useState([]);
 
@@ -34,8 +35,9 @@ const App = () => {
       setDate(Object.values(storage));
 
       if(Object.keys(storage).includes(currentaccount)) {
+        setIsRegister(true);
         setAccountRecord(Object.values(storage[currentaccount]));
-        setAccountRecord(Object.values(storage[currentaccount]));
+        setLoginRecord(Object.values(storage[currentaccount]));
       };
       
       // Frontend logic
@@ -147,27 +149,35 @@ const App = () => {
 
   const onLogin = async () => {
     try {
-      setLoading1(true);
-      await loginOperation(message2, message3);
-      alert("Login succesful!");
-      setMessage2('');
-      setMessage3('');
+      if(loginRecord){
+        if(message2 == loginRecord[0][0] && message3 == loginRecord[0][1]){
+          setLoading1(true);
+          alert("Login succesful!");
+        }
+      }
+      else {
+          setLoading1(true);
+          await loginOperation(message2, message3);
+          alert("Registration succesful!");
+          setMessage2('');
+          setMessage3('');
+      }
     } catch (err) {
       alert(err.message);
     }
     setLoading1(false);
   };
 
-  // const onRegister = async () => {
-  //   try {
-  //     setLoading1(true);
-  //     await registerOperation();
-  //     alert("Registered!");
-  //   } catch (err) {
-  //     alert(err.message);
-  //   }
-  //   setLoading1(false);
-  // };
+  const onRegister = async () => {
+    try {
+      setLoading1(true);
+      await registerOperation();
+      alert("Registered!");
+    } catch (err) {
+      alert(err.message);
+    }
+    setLoading1(false);
+  };
 
   // function ShowRecord(accRec) {
   //   return (
@@ -185,17 +195,35 @@ const App = () => {
 
   function ShowAccordion(accRec) {
     return (
-      <>
-      {accRec.length > 0 && 
-
+      <>{isregistered 
+        ?
+        accRec.length
+        ?
+        <div>
+        <h1>Your Medical <span>History</span>!</h1><br/>
         <div class="accordion">
-
         {accountRecord.map(data => (
           <Accordion title={data.date} data1 = {data.date} data2 = {data.record_text}></Accordion>
           ))}
-
-        </div>
-      }
+        </div></div>
+        :
+        <div align="center"><h4>Hey! You have not added any record yet.</h4><br/>
+        Use the form to add your first record!
+        <br></br>
+        <br></br></div>
+     :
+     <div align="center">
+     <h3>You Seem to be a new user!</h3><br/>
+     Register you account to start your electronic health record journey
+     <br></br>
+     <br></br>
+      <button onClick={onRegister} id="submit1">
+      {/* TODO 7.b - Call onBuyTicket on click */}
+      {/* TODO 7.c - Show "loading..." when buying operation is pending */}
+      {loading1 ? "Loading..." : "Register"}
+      </button>
+      </div>
+     }
       </>
     );
   }
@@ -226,14 +254,10 @@ const App = () => {
         </div>
 
         <div class="firstHalf">
-            <h1>Your Medical <span>History</span>!</h1>
-            <br/>
-
+            {/* <h1>Your Medical <span>History</span>!</h1>
+            <br/> */}
                 {ShowAccordion(accountRecord)}
-
-{/* 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi</p>  */}
-            
+          
             <div class=""></div>
         
         </div>
@@ -262,7 +286,7 @@ const App = () => {
             </form>
         </div>
 
-        <div class="secondHalfmodified">
+        {/* <div class="secondHalfmodified">
             <h1 id="formTitle">Register/Login</h1>
             <br/>
             <form>
@@ -272,13 +296,11 @@ const App = () => {
 
                 <label for="email" id="email-label">Password</label><br/>
                 <input id="message3" name="message3" type="text" placeholder="Password" onChange={handleChange3} value={message3}/><br/>
-                {/* <label for="number" id="number-label">Password</label><br/>
-                <input id="number" type="password" name="number" placeholder="Password"/><br/><br/> */}
-                
                 <br/><br/>
                 <input id="submit" type="button" value={loading1 ? "Loading..." : "Login"} onClick={onLogin}/>          
             </form>
-        </div>
+        </div> */}
+
     </div>
 
     <footer>
