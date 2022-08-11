@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import { connectWallet, getAccount } from "../utils/wallet";
+// import { ReactDOM } from "react-dom";
+// import { BrowserRouter, Route, Link } from "react-router-dom";
+// import Transactions from "./transaction";
 
 const Navbar = () => {
   const [account, setAccount] = useState("");
@@ -20,7 +23,13 @@ const Navbar = () => {
   };
 
   return (
+    
     <div className="navbar navbar-dark bg-dark fixed-top sticky-nav">
+      {/* <BrowserRouter>
+      <Routes>
+          <Route path="transaction" element={<Transactions />} />
+      </Routes>
+    </BrowserRouter> */}
       <div className="container py-2">
         
         <a href="/" className="navbar-brand">
@@ -29,6 +38,13 @@ const Navbar = () => {
         <ul class="nav">
             {/* <li><a href="#home">Home</a></li> */}
             <li><a href="#about">Transactions</a></li>
+
+            {/* <li>
+            <Link to="/transaction">
+              Transactions
+            </Link>
+            </li> */}
+
             <li><a href="#contact">Contact Us</a></li>
         </ul>
         

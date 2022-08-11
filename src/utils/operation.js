@@ -3,12 +3,14 @@ import { tezos } from "./tezos";
 
 // KT1Mbcm3s69ThWmHf9fxEVtNfV1iLad2CMzR : Health Register contract deployed on jakartanet
 
+// KT1QVntDsrg2DgrCvDEmYmty5cCh8W8H9vmd : Latest Health Register containing 7 fields of input
+
 // KT1CzSerSLpKV4FR7gjNFMoKk95qTYpJgc5z : Login contract deployed on jakartanet
 
-export const addRecordOperation = async (date, record_text) => {
+export const addRecordOperation = async (date, doctor, age, height, weight, hospital, prescription) => {
   try {
-    const contractInstance = await tezos.wallet.at("KT1Mbcm3s69ThWmHf9fxEVtNfV1iLad2CMzR");
-    const op = await contractInstance.methods.add_record(date, record_text).send();
+    const contractInstance = await tezos.wallet.at("KT1QVntDsrg2DgrCvDEmYmty5cCh8W8H9vmd");
+    const op = await contractInstance.methods.add_record(date, doctor, age, height, weight, hospital, prescription).send();
     await op.confirmation(1);
   } catch (err) {
     throw err;
@@ -17,7 +19,7 @@ export const addRecordOperation = async (date, record_text) => {
 
 export const registerOperation = async () => {
   try {
-    const contractInstance = await tezos.wallet.at("KT1Mbcm3s69ThWmHf9fxEVtNfV1iLad2CMzR");
+    const contractInstance = await tezos.wallet.at("KT1QVntDsrg2DgrCvDEmYmty5cCh8W8H9vmd");
     const op = await contractInstance.methods.register().send();
     await op.confirmation(1);
   } catch (err) {

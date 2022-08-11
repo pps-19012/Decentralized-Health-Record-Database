@@ -10,10 +10,14 @@ import Accordion from "./Accordion";
 const App = () => {
   // Patients and health register history
   // const [noOfPatients, setNumber] = useState()
-  const [message, setMessage] = useState('');
-  const [message1, setMessage1] = useState('');
-  const [message2, setMessage2] = useState('');
-  const [message3, setMessage3] = useState('');
+  const [message, setMessage] = useState(''); //date
+  const [message1, setMessage1] = useState(''); //doctor
+  const [message2, setMessage2] = useState(''); //age
+  const [message3, setMessage3] = useState(''); //height
+  const [message4, setMessage4] = useState(''); //weight
+  const [message5, setMessage5] = useState(''); //hospital
+  const [message6, setMessage6] = useState(''); //prescription
+
   const [record, setRecord] = useState([]);
   const [patients, setPatient] = useState([]);
   const [date, setDate] = useState([]);
@@ -129,6 +133,21 @@ const App = () => {
     console.log('value is:', event.target.value);
   };
 
+  const handleChange4 = event => {
+    setMessage4(event.target.value);
+    console.log('value is:', event.target.value);
+  };
+
+  const handleChange5 = event => {
+    setMessage3(event.target.value);
+    console.log('value is:', event.target.value);
+  };
+
+  const handleChange6 = event => {
+    setMessage3(event.target.value);
+    console.log('value is:', event.target.value);
+  };
+
   const handleSubmit = event => {
     event.preventDefault();
   }
@@ -137,10 +156,16 @@ const App = () => {
   const onAddRecord = async () => {
     try {
       setLoading(true);
-      await addRecordOperation(message, message1);
-      alert("Transaction succesful!");
+      await addRecordOperation(message, message1, message2, message3, message4, message5, message6);
+      alert("Transaction succesful! Record is added.");
       setMessage('');
       setMessage1('');
+      setMessage2('');
+      setMessage3('');
+      setMessage4('');
+      setMessage5('');
+      setMessage6('');
+
     } catch (err) {
       alert(err.message);
     }
@@ -203,7 +228,7 @@ const App = () => {
         <h1>Your Medical <span>History</span>!</h1><br/>
         <div class="accordion">
         {accountRecord.map(data => (
-          <Accordion title={data.date} data1 = {data.date} data2 = {data.record_text}></Accordion>
+          <Accordion title={data.date} data1 = {data.date} data2 = {data.doctor} data3 = {data.age} data4 = {data.height} data5 = {data.weight} data6 = {data.hospital} data7 = {data.prescription}> </Accordion>
           ))}
         </div></div>
         :
@@ -277,10 +302,25 @@ const App = () => {
             <form>
 
                 <label for="fname" id="name-label">Date</label><br/>
-                <input id="message" name="message" type="text" placeholder="Date" onChange={handleChange} value={message}/><br/>
+                <input id="message" name="message" type="date" placeholder="Date" onChange={handleChange} value={message}/><br/>
+
+                <label for="email" id="email-label">Doctor</label><br/>
+                <input id="message1" name="message1" type="text" placeholder="Doctor" onChange={handleChange1} value={message1}/><br/>
+
+                <label for="email" id="email-label">Age</label><br/>
+                <input id="message2" name="message2" type="text" placeholder="Age" onChange={handleChange2} value={message2}/><br/>
+
+                <label for="email" id="email-label">Height</label><br/>
+                <input id="message3" name="message3" type="text" placeholder="Height" onChange={handleChange3} value={message3}/><br/>
+
+                <label for="email" id="email-label">Weight</label><br/>
+                <input id="message4" name="message4" type="text" placeholder="Weight" onChange={handleChange4} value={message4}/><br/>
+
+                <label for="email" id="email-label">Hospital</label><br/>
+                <input id="message5" name="message5" type="text" placeholder="Hospital" onChange={handleChange5} value={message5}/><br/>
 
                 <label for="email" id="email-label">Prescription</label><br/>
-                <input id="message1" name="message1" type="text" placeholder="Prescription" onChange={handleChange1} value={message1}/><br/>
+                <input id="message6" name="message6" type="text" placeholder="Prescription" onChange={handleChange6} value={message6}/><br/>
                 {/* <label for="number" id="number-label">Password</label><br/>
                 <input id="number" type="password" name="number" placeholder="Password"/><br/><br/> */}
                 
