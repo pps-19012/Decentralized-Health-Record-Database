@@ -228,7 +228,7 @@ const App = () => {
         <h1>Your Medical <span>History</span>!</h1><br/>
         <div class="accordion">
         {accountRecord.map(data => (
-          <Accordion title={data.date} data1 = {data.date} data2 = {data.doctor} data3 = {data.age} data4 = {data.height} data5 = {data.weight} data6 = {data.hospital} data7 = {data.prescription}> </Accordion>
+          <Accordion title={data.date} data1={data.date} data2={data.doctor} data3={data.age} data4={data.height} data5 ={data.weight} data6={data.hospital} data7={data.prescription}> </Accordion>
           ))}
         </div></div>
         :
