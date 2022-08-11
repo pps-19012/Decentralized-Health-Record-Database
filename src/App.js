@@ -139,12 +139,12 @@ const App = () => {
   };
 
   const handleChange5 = event => {
-    setMessage3(event.target.value);
+    setMessage5(event.target.value);
     console.log('value is:', event.target.value);
   };
 
   const handleChange6 = event => {
-    setMessage3(event.target.value);
+    setMessage6(event.target.value);
     console.log('value is:', event.target.value);
   };
 
