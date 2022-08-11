@@ -156,7 +156,7 @@ const App = () => {
   const onAddRecord = async () => {
     try {
       setLoading(true);
-      await addRecordOperation(message, message1, message2, message3, message4, message5, message6);
+      await addRecordOperation(message2, message, message1, message3, message5, message6, message4);
       alert("Transaction succesful! Record is added.");
       setMessage('');
       setMessage1('');
