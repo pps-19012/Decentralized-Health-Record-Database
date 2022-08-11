@@ -1,40 +1,3 @@
-/* #root,
-html,
-body {
-  height: 100%;
-}
-.sticky-nav {
-  position: sticky;
-  top: 0;
-}
-
-
-.RecordTable {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-  
-table {
-  border: 2px solid forestgreen;
-  width: 800px;
-  height: 200px;
-}
-  
-th {
-  border-bottom: 1px solid black;
-}
-
-/* tr {
-  text-align: center;
-} */
-
-/* td {
-  text-align: center;
-} */ */
-
 * {
   margin: 0px;
   padding: 0px;
@@ -208,6 +171,19 @@ th {
   font-family: monospace;
 }
 
+form input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color: rgb(42, 54, 54);
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 form input[type="text"] {
   width: 100%;
   padding: 5px;
@@ -234,7 +210,7 @@ form input[type="email"] {
   font-weight: bold;
 }
 
-form input[type="password"] {
+form input[type="date"] {
   width: 100%;
   padding: 5px;
   margin: 5px 0px;
@@ -246,6 +222,7 @@ form input[type="password"] {
   font-size: 16px;
   font-weight: bold;
 }
+
 
 form input[type="radio"] {
   padding: 5px;
@@ -270,6 +247,29 @@ form textarea {
   font-family: monospace;
   font-size: 16px;
   font-weight: bold;
+}
+
+form .form-group {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* margin: 0px, 5px; */
+}
+
+.form-group-1 {
+  margin: 0px, 5px;
+  padding: 10px;
+}
+
+form {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #submit {

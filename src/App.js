@@ -300,32 +300,38 @@ const App = () => {
             <h1 id="formTitle">Add Record</h1>
             <br/>
             <form>
+              <div class="form-group">
+                <div class="form-group-1">
+                  <label for="message" id="name-label">Date</label><br/>
+                  <input id="message" name="message" type="date" placeholder="Date" onChange={handleChange} value={message}/><br/>
 
-                <label for="fname" id="name-label">Date</label><br/>
-                <input id="message" name="message" type="date" placeholder="Date" onChange={handleChange} value={message}/><br/>
+                  <label for="message1" id="email-label">Doctor</label><br/>
+                  <input id="message1" name="message1" type="text" placeholder="Doctor" onChange={handleChange1} value={message1}/><br/>
 
-                <label for="email" id="email-label">Doctor</label><br/>
-                <input id="message1" name="message1" type="text" placeholder="Doctor" onChange={handleChange1} value={message1}/><br/>
-
-                <label for="email" id="email-label">Age</label><br/>
-                <input id="message2" name="message2" type="text" placeholder="Age" onChange={handleChange2} value={message2}/><br/>
-
-                <label for="email" id="email-label">Height</label><br/>
-                <input id="message3" name="message3" type="text" placeholder="Height" onChange={handleChange3} value={message3}/><br/>
-
-                <label for="email" id="email-label">Weight</label><br/>
-                <input id="message4" name="message4" type="text" placeholder="Weight" onChange={handleChange4} value={message4}/><br/>
-
-                <label for="email" id="email-label">Hospital</label><br/>
-                <input id="message5" name="message5" type="text" placeholder="Hospital" onChange={handleChange5} value={message5}/><br/>
-
-                <label for="email" id="email-label">Prescription</label><br/>
-                <input id="message6" name="message6" type="text" placeholder="Prescription" onChange={handleChange6} value={message6}/><br/>
-                {/* <label for="number" id="number-label">Password</label><br/>
-                <input id="number" type="password" name="number" placeholder="Password"/><br/><br/> */}
+                  <label for="message2" id="email-label">Age</label><br/>
+                  <input id="message2" name="message2" type="number" placeholder="Age" onChange={handleChange2} value={message2}/><br/>
+                </div>
                 
-                <br/><br/>
-                <input id="submit" type="button" value={loading ? "Loading..." : "Submit"} onClick={onAddRecord}/>          
+                <div class="form-group-2">
+                  <label for="message3" id="email-label">Height</label><br/>
+                  <input id="message3" name="message3" type="number" placeholder="Height" onChange={handleChange3} value={message3}/><br/>
+
+                  <label for="message4" id="email-label">Weight</label><br/>
+                  <input id="message4" name="message4" type="number" placeholder="Weight" onChange={handleChange4} value={message4}/><br/>
+
+                  <label for="message5" id="email-label">Hospital</label><br/>
+                  <input id="message5" name="message5" type="text" placeholder="Hospital" onChange={handleChange5} value={message5}/><br/>
+                </div>
+              </div>
+              <div class="form-group-3">
+                  <label for="message6" id="email-label">Prescription</label><br/>
+                  <textarea id="message6" name="message6" type="text" placeholder="Prescription" onChange={handleChange6} value={message6}/><br/>
+                  {/* <label for="number" id="number-label">Password</label><br/>
+                  <input id="number" type="password" name="number" placeholder="Password"/><br/><br/> */}
+                  
+                  <br/><br/>
+                  <input id="submit" type="button" value={loading ? "Loading..." : "Submit"} onClick={onAddRecord}/>
+              </div>          
             </form>
         </div>
 
