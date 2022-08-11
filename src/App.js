@@ -351,7 +351,22 @@ const App = () => {
         </div> */}
 
     </div>
+    <div class="redirect">
+      <div class="new-page-Cover">
+        <div class="About-Us">
+          <p class="new-page-header">About Us</p>
 
+          <p class="new-page-text">consectetur adipiscing elit. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi</p>
+        </div>
+      </div>
+      <div class="new-page-Cover">
+        <div class="Contact-Us">
+          <p class="new-page-header">Contact Us</p>
+
+          <p class="new-page-text">lorem ipsum dlanflanasd asdlasdlkas asdlamdlask asdas;lkd;KD edad aadad sdfsfasf sddf sdfsad sdg g fs dfsdf sdf</p>
+        </div>
+      </div>
+    </div>
     <footer>
         <p>Made with ♥ by Team Fo4r.</p>
     </footer>

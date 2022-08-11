@@ -33,7 +33,7 @@ const Navbar = () => {
       <div className="container py-2">
         
         <a href="/" className="navbar-brand">
-          Health Register
+          HEALTH REGISTER
         </a>
         <ul class="nav">
             {/* <li><a href="#home">Home</a></li> */}
