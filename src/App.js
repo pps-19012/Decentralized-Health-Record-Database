@@ -7,7 +7,6 @@ import { fetchStorage } from "./utils/tzkt";
 import { fetchStorage1 } from "./utils/tzkt";
 import Accordion from "./Accordion";
 import { BrowserRouter, Router, Routes} from "react-router-dom";
-import {HashLink as Link} from 'react-router-hash-link';
 import pps from "./pps-image.png";
 import mt16 from "./mt16-image.png";
 import heart from "./heart.png"
