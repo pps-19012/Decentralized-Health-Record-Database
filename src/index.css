@@ -68,6 +68,18 @@
   
 }
 
+.accordion-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Bold {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .firstHalf {
   width:50%;
   background-color: rgb(42, 54, 54);
