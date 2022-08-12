@@ -6,6 +6,10 @@ import { loginOperation } from "./utils/operation";
 import { fetchStorage } from "./utils/tzkt";
 import { fetchStorage1 } from "./utils/tzkt";
 import Accordion from "./Accordion";
+import { BrowserRouter, Router, Routes} from "react-router-dom";
+import {HashLink as Link} from 'react-router-hash-link';
+import pps from "./pps-image.png";
+import mt16 from "./mt16-image.png";
 
 const App = () => {
   // Patients and health register history
@@ -401,13 +405,22 @@ Addition of fungible tokens rewards to users
       <div class="new-page-Cover">
         <div class="Contact-Us">
           <p class="new-page-header">Contact Us</p>
-
-          <p class="new-page-text">lorem ipsum dlanflanasd asdlasdlkas asdlamdlask asdas;lkd;KD edad aadad sdfsfasf sddf sdfsad sdg g fs dfsdf sdf</p>
+          <div class="contact-us-photos">
+            <div class="photo">
+              <img href="https://github.com/pps-19012" class = 'pps-photo' src={pps} alt="Pushpendra Pratap Singh"/>
+              <p class="Name">Pushpendra Pratap Singh</p>
+            </div>
+            <div class="photo">
+              <img href="https://github.com/MumukshTayal" class="mt16-photo" src={mt16} alt="Mumuksh Tayal"/>
+              <p class="Name">Mumuksh Tayal</p>
+            </div>
+          </div>
+          {/* <p class="new-page-text">lorem ipsum dlanflanasd asdlasdlkas asdlamdlask asdas;lkd;KD edad aadad sdfsfasf sddf sdfsad sdg g fs dfsdf sdf</p> */}
         </div>
       </div>
     </div>
     <footer>
-        <p>Made with ♥ by Team Fo4r.</p>
+
     </footer>
 </body>
 </html>
