@@ -9,23 +9,23 @@ Contract Address: KT1Mbcm3s69ThWmHf9fxEVtNfV1iLad2CMzR
 - In terminal type ```npm install```. This will download node modules.
 - Then type ```npm run start```. This will open the site on localhost.
 
-- Team Name
+### Team Name
 
 Team Fo4r
 
-- Names of team members (hyperlinked with their Twitter profiles)
+### Names of team members (hyperlinked with their Twitter profiles)
 
 [Pushpendra](https://twitter.com/neonboi19) and [Mumuksh](https://twitter.com/MT1699)
 
-- Project Name
+### Project Name
 
 Decentralized Health Record Database
 
-- Project Description
+### Project Description
 
 This is a decentralized application for maintaining your medical records. It serves two important purpose: User can add their medical record and view the medical history with this application.
 
-- Inspiration
+### Inspiration
 
 The pace of development is accelerating at ever-increasing rates in the area of
 healthcare. Today, there is a demand for high-quality medical facilities that are
@@ -37,23 +37,23 @@ for treatment. Healthcare organisations can better provide proper patient care
 and top-notch medical facilities thanks to the blockchain.
 
 
-- Tech Stack
+### Tech Stack
 
 Tezos Blockchain, Smart-Py (for Smart contract), Taquito library, React JS
 
 
-- Specific track if you have participated in any
+### Specific track if you have participated in any
 
 Buidl on Electronic Health Record DApp on Tezos
 
-- Project repo link
+### Project repo link
 
 You can check it out [here](https://gitopia.com/gitopia142lyeep80uz7jlu6f85y960938g24rnuf73uyf/Decentralized-Health-Record-Database)!
 
-- Demo video link
+### Demo video link
 
 Find it out [here](https://youtu.be/Ct-y4nKfxe4)!
 
-- Hosted website
+### Hosted website
 
 You can it out [here](https://decentralized-health-record.herokuapp.com/)!
