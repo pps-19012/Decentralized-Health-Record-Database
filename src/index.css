@@ -506,7 +506,7 @@ footer p {
   /* background-color: bisque; */
 }
 
-img {
+.pps-photo {
   /* width:80%;
   height:80%; */
   cursor: pointer;
@@ -515,10 +515,16 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 100%;
-  background-color: black;
+  background-color: rgb(42, 54, 54);
 }
 
 .contact-us-photos {
   display: flex;
   flex-direction: row;
+}
+
+.abc{
+  width: 20%;
+  height: 20%;
+  margin: 20px;
 }

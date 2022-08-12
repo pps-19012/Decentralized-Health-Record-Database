@@ -373,7 +373,7 @@ the efficiency, security, and transparency of sharing medical data.</p>
           <p class="new-page-header">About Us</p>
           <h2 class="Topic">Inspiration</h2>
           <p class="new-page-text">
-            <br></br> <img src={heart} />The pace of development is accelerating at ever-increasing rates in the area of
+            <br></br> <img class="abc" src={heart} />The pace of development is accelerating at ever-increasing rates in the area of
 healthcare. Today, there is a demand for high-quality medical facilities that are
 supported by cutting-edge and modern technology. Here, Blockchain might be
 important in revolutionising the healthcare industry. Additionally, the structure
@@ -415,11 +415,11 @@ Addition of fungible tokens rewards to users
           <p class="new-page-header">Contact Us</p>
           <div class="contact-us-photos">
             <div class="photo">
-              <img href="https://github.com/pps-19012" class = 'pps-photo' src={pps} alt="Pushpendra Pratap Singh"/>
+              <a href="https://github.com/pps-19012"><img  class = 'pps-photo' src={pps} alt="Pushpendra Pratap Singh"/></a>
               <p class="Name">Pushpendra Pratap Singh</p>
             </div>
             <div class="photo">
-              <img href="https://github.com/MumukshTayal" class="mt16-photo" src={mt16} alt="Mumuksh Tayal"/>
+              <a href="https://github.com/MumukshTayal"><img  class="pps-photo" src={mt16} alt="Mumuksh Tayal"/></a>
               <p class="Name">Mumuksh Tayal</p>
             </div>
           </div>
