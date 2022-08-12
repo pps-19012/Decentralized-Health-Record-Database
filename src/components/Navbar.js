@@ -37,7 +37,7 @@ const Navbar = () => {
         </a>
         <ul class="nav">
             {/* <li><a href="#home">Home</a></li> */}
-            <li><a href="#about">Transactions</a></li>
+            <li><a href="https://better-call.dev/jakartanet/KT1QVntDsrg2DgrCvDEmYmty5cCh8W8H9vmd/storage">Transactions</a></li>
 
             {/* <li>
             <Link to="/transaction">
@@ -45,7 +45,7 @@ const Navbar = () => {
             </Link>
             </li> */}
 
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="https://gitopia.com/gitopia142lyeep80uz7jlu6f85y960938g24rnuf73uyf/Decentralized-Health-Record">Gitopia Repo</a></li>
         </ul>
         
         <div className="d-flex">

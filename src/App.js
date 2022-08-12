@@ -10,6 +10,8 @@ import { BrowserRouter, Router, Routes} from "react-router-dom";
 import {HashLink as Link} from 'react-router-hash-link';
 import pps from "./pps-image.png";
 import mt16 from "./mt16-image.png";
+import heart from "./heart.png"
+
 
 const App = () => {
   // Patients and health register history
@@ -295,9 +297,19 @@ const App = () => {
         </div>
 
         <div class="firstHalfmodified">
-            <h1>Welcome to the <span>Trial</span>!</h1>
+            <h1>Why decentralized medical records?</h1>
             <br/>
-            <p>consectetur adipiscing elit. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi</p>
+            <p>The pace of development is accelerating at ever-increasing rates in the area of
+healthcare. Today, there is a demand for high-quality medical facilities that are
+supported by cutting-edge and modern technology. Here, Blockchain might be
+important in revolutionising the healthcare industry. Additionally, the structure
+of the healthcare system is changing in favour of a patient-centred strategy that
+emphasises two key components: always having access to the right resources
+for treatment. Healthcare organisations can better provide proper patient care
+and top-notch medical facilities thanks to the blockchain.</p>
+<p>Blockchain applications can precisely detect serious errors, including potentially
+deadly ones, in the medical industry. In the healthcare sector, it can therefore enhance
+the efficiency, security, and transparency of sharing medical data.</p>
         </div>
 
         <div class="secondHalf">
@@ -361,7 +373,7 @@ const App = () => {
           <p class="new-page-header">About Us</p>
           <h2 class="Topic">Inspiration</h2>
           <p class="new-page-text">
-            <br></br>The pace of development is accelerating at ever-increasing rates in the area of
+            <br></br> <img src={heart} />The pace of development is accelerating at ever-increasing rates in the area of
 healthcare. Today, there is a demand for high-quality medical facilities that are
 supported by cutting-edge and modern technology. Here, Blockchain might be
 important in revolutionising the healthcare industry. Additionally, the structure
@@ -381,23 +393,19 @@ Creating a database management system like this will result in better transparen
 all people, including the patients, medical personnel, and those who are in the
 business of developing medicines.
 <br></br></p><h2 class="Topic">Tech Architecture</h2><p class="new-page-text">
-<br></br>
-- Tezos Blockchain
-- Smart-Py (for Smart contract)
-- Taquito library
-- React JS
+Tezos Blockchain | Smart-Py (for Smart contract) | Taquito library | React JS
 <br></br><br></br></p>
-<h2 class ="Topic">About our application</h2><p class="new-page-text"><br></br>
+<h2 class ="Topic">About our application</h2><p class="new-page-text">
 A user-friendly application which allows users (patients, doctors, etc.)
 to track their medical records. A user (patient, doctor, etc.) should be able to
 add the record via a form in the application and view the history of previous
 medical prescriptions/records.<br></br><br></br></p>
-<h2 class="Topic">How to use the application</h2><p class="new-page-text"><br></br>
-Step-1: Connect you wallet
-Step-2: Register your account if you are a new user
-Step-3: Start adding medical records to your history
+<h2 class="Topic">How to use the application</h2><p class="new-page-text">
+Step-1: Connect you wallet <br></br>
+Step-2: Register your account if you are a new user <br></br>
+Step-3: Start adding medical records to your history <br></br>
 </p>
-<h2 class="Topic">Future improvements</h2><p class="new-page-text"><br></br>
+<h2 class="Topic">Future improvements</h2><p class="new-page-text">
 Addition of fungible tokens rewards to users
 </p>
         </div>
