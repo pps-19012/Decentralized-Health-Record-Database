@@ -377,23 +377,22 @@ Creating a database management system like this will result in better transparen
 all people, including the patients, medical personnel, and those who are in the
 business of developing medicines.
 <br></br></p><h2 class="Topic">Tech Architecture</h2><p class="new-page-text">
-<br></br>
 - Tezos Blockchain
 - Smart-Py (for Smart contract)
 - Taquito library
 - React JS
 <br></br><br></br></p>
-<h2 class ="Topic">About our application</h2><p class="new-page-text"><br></br>
+<h2 class ="Topic">About our application</h2><p class="new-page-text">
 A user-friendly application which allows users (patients, doctors, etc.)
 to track their medical records. A user (patient, doctor, etc.) should be able to
 add the record via a form in the application and view the history of previous
 medical prescriptions/records.<br></br><br></br></p>
-<h2 class="Topic">How to use the application</h2><p class="new-page-text"><br></br>
-Step-1: Connect you wallet
-Step-2: Register your account if you are a new user
-Step-3: Start adding medical records to your history
+<h2 class="Topic">How to use the application</h2><p class="new-page-text">
+Step-1: Connect you wallet <br></br>
+Step-2: Register your account if you are a new user <br></br>
+Step-3: Start adding medical records to your history <br></br>
 </p>
-<h2 class="Topic">Future improvements</h2><p class="new-page-text"><br></br>
+<h2 class="Topic">Future improvements</h2><p class="new-page-text">
 Addition of fungible tokens rewards to users
 </p>
         </div>
