@@ -9,13 +9,13 @@ const Accordion = ({ title, data1, data2, data3, data4, data5, data6, data7}) =>
         <div>{title}</div>
         <div>{isActive ? '-' : '+'}</div>
       </div>
-      {isActive && <div className="accordion-content">{data1}
-      <br></br>{data2}
-      <br></br>{data3}
-      <br></br>{data4}
-      <br></br>{data5}
-      <br></br>{data6}
-      <br></br>{data7}
+      {isActive && <div className="accordion-content">Date: {data1}
+      <br></br>Doctor: {data2}
+      <br></br>Age: {data3}
+      <br></br>Height: {data4}
+      <br></br>Weight: {data5}
+      <br></br>Hospital: {data6}
+      <br></br>Prescription: {data7}
       </div>}
     </div>
   );

@@ -314,10 +314,10 @@ const App = () => {
                 
                 <div class="form-group-2">
                   <label for="message3" id="email-label">Height</label><br/>
-                  <input id="message3" name="message3" type="number" placeholder="Height" onChange={handleChange3} value={message3}/><br/>
+                  <input id="message3" name="message3" type="number" placeholder="Height (cm)" onChange={handleChange3} value={message3}/><br/>
 
                   <label for="message4" id="email-label">Weight</label><br/>
-                  <input id="message4" name="message4" type="number" placeholder="Weight" onChange={handleChange4} value={message4}/><br/>
+                  <input id="message4" name="message4" type="number" placeholder="Weight (kg)" onChange={handleChange4} value={message4}/><br/>
 
                   <label for="message5" id="email-label">Hospital</label><br/>
                   <input id="message5" name="message5" type="text" placeholder="Hospital" onChange={handleChange5} value={message5}/><br/>
@@ -355,8 +355,47 @@ const App = () => {
       <div class="new-page-Cover">
         <div class="About-Us">
           <p class="new-page-header">About Us</p>
-
-          <p class="new-page-text">consectetur adipiscing elit. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi nisl euismod nisi. Nullam euismod, nisi vel consectetur euismod, nisi nisl consectetur nisi, euismod nisi</p>
+          <h2>Inspiration</h2>
+          <p class="new-page-text">
+            <br></br>The pace of development is accelerating at ever-increasing rates in the area of
+healthcare. Today, there is a demand for high-quality medical facilities that are
+supported by cutting-edge and modern technology. Here, Blockchain might be
+important in revolutionising the healthcare industry. Additionally, the structure
+of the healthcare system is changing in favour of a patient-centred strategy that
+emphasises two key components: always having access to the right resources
+for treatment. Healthcare organisations can better provide proper patient care
+and top-notch medical facilities thanks to the blockchain.
+<br></br><br></br>
+Blockchain applications can precisely detect serious errors, including potentially
+deadly ones, in the medical industry. In the healthcare sector, it can therefore enhance
+the efficiency, security, and transparency of sharing medical data. Medical institutions
+can acquire insight and improve the analysis of patient information with the use of
+this technology. It can provide a distinctive data storage pattern at the greatest level of
+security and lessen the concern about data tampering in healthcare.
+<br></br>
+Creating a database management system like this will result in better transparency for
+all people, including the patients, medical personnel, and those who are in the
+business of developing medicines.
+<br></br></p><h2>Tech Architecture</h2><p class="new-page-text">
+<br></br>
+- Tezos Blockchain
+- Smart-Py (for Smart contract)
+- Taquito library
+- React JS
+<br></br><br></br></p>
+<h2>About our application</h2><p class="new-page-text"><br></br>
+A user-friendly application which allows users (patients, doctors, etc.)
+to track their medical records. A user (patient, doctor, etc.) should be able to
+add the record via a form in the application and view the history of previous
+medical prescriptions/records.<br></br><br></br></p>
+<h2>How to use the application</h2><p class="new-page-text"><br></br>
+Step-1: Connect you wallet
+Step-2: Register your account if you are a new user
+Step-3: Start adding medical records to your history
+</p>
+<h2>Future improvements</h2><p class="new-page-text"><br></br>
+Addition of fungible tokens rewards to users
+</p>
         </div>
       </div>
       <div class="new-page-Cover">
