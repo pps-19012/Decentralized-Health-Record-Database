@@ -80,6 +80,10 @@
   text-decoration: underline;
 }
 
+.Topic {
+  color: white;
+}
+
 .firstHalf {
   width:50%;
   background-color: rgb(42, 54, 54);

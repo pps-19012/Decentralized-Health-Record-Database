@@ -355,7 +355,7 @@ const App = () => {
       <div class="new-page-Cover">
         <div class="About-Us">
           <p class="new-page-header">About Us</p>
-          <h2>Inspiration</h2>
+          <h2 class="Topic">Inspiration</h2>
           <p class="new-page-text">
             <br></br>The pace of development is accelerating at ever-increasing rates in the area of
 healthcare. Today, there is a demand for high-quality medical facilities that are
@@ -376,24 +376,24 @@ security and lessen the concern about data tampering in healthcare.
 Creating a database management system like this will result in better transparency for
 all people, including the patients, medical personnel, and those who are in the
 business of developing medicines.
-<br></br></p><h2>Tech Architecture</h2><p class="new-page-text">
+<br></br></p><h2 class="Topic">Tech Architecture</h2><p class="new-page-text">
 <br></br>
 - Tezos Blockchain
 - Smart-Py (for Smart contract)
 - Taquito library
 - React JS
 <br></br><br></br></p>
-<h2>About our application</h2><p class="new-page-text"><br></br>
+<h2 class ="Topic">About our application</h2><p class="new-page-text"><br></br>
 A user-friendly application which allows users (patients, doctors, etc.)
 to track their medical records. A user (patient, doctor, etc.) should be able to
 add the record via a form in the application and view the history of previous
 medical prescriptions/records.<br></br><br></br></p>
-<h2>How to use the application</h2><p class="new-page-text"><br></br>
+<h2 class="Topic">How to use the application</h2><p class="new-page-text"><br></br>
 Step-1: Connect you wallet
 Step-2: Register your account if you are a new user
 Step-3: Start adding medical records to your history
 </p>
-<h2>Future improvements</h2><p class="new-page-text"><br></br>
+<h2 class="Topic">Future improvements</h2><p class="new-page-text"><br></br>
 Addition of fungible tokens rewards to users
 </p>
         </div>
