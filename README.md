@@ -1,6 +1,6 @@
 # Decentralized-Health-Record 
 
-Contract Address: KT1Mbcm3s69ThWmHf9fxEVtNfV1iLad2CMzR
+Contract Address: KT1QVntDsrg2DgrCvDEmYmty5cCh8W8H9vmd
 
 ## Steps:
 - Clone repository
