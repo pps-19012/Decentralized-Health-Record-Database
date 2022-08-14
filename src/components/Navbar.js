@@ -3,6 +3,7 @@ import { connectWallet, getAccount } from "../utils/wallet";
 // import { ReactDOM } from "react-dom";
 // import { BrowserRouter, Route, Link } from "react-router-dom";
 // import Transactions from "./transaction";
+// to check fixed error
 
 const Navbar = () => {
   const [account, setAccount] = useState("");
