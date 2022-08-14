@@ -45,7 +45,7 @@ const Navbar = () => {
             </Link>
             </li> */}
 
-            <li><a href="https://gitopia.com/gitopia142lyeep80uz7jlu6f85y960938g24rnuf73uyf/Decentralized-Health-Record">Gitopia Repo</a></li>
+            <li><a href="https://gitopia.com/gitopia142lyeep80uz7jlu6f85y960938g24rnuf73uyf/Decentralized-Health-Record-Database">Gitopia Repo</a></li>
         </ul>
         
         <div className="d-flex">
