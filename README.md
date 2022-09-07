@@ -54,6 +54,4 @@ Find it out [here](https://youtu.be/Ct-y4nKfxe4)!
 
 ### Hosted website
 
-You can it out [here](https://decentralized-health-record.herokuapp.com/)!
-
-!
+You can it out [here](https://decentralized-health-record.herokuapp.com/)! (might have to reload if it throws error)
